@@ -1,0 +1,16 @@
+<h1>DESCRIPTION OF MOVIES</h1>
+<hr>
+<table border="1"> 
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Director</th>
+        <th>Rating</th>
+        <th>Genre</th>
+    </tr>
+    <tr>
+        {% for movie in movies %}
+        <td> {{ movie.name }}</td>
+        {% endfor %}
+    </tr>
+</table>
